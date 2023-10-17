@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "SpaceCrusadersItalic";
+    src: url(../Font_Source/SpaceCrusadersItalic-ZV1Zx.ttf);
+}
+ 
+.name_header{
+    background-color: black;
+    font-family: "SpaceCrusadersItalic";
+    color: cyan;
+}
+
+.menu_header ul, .menu_header li{
+    padding: 0;
+    margin: 0;
+}
+
+.menu_header ul{
+    background-color: cyan;
+    list-style: none;
+    width: 100%;
+}
+
+.menu_header li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.menu_header a{
+    background-color: cyan;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.menu_header li:hover a{
+    background-color: gray;
+}
+
+.sub_menu{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul.sub_menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub_menu li{
+    float: none;
+    width: 100%;
+}
+
+.sub_menu a:hover{
+    background-color: white;
+}
+
+.sub_menu a{
+    background-color: white;
+}
